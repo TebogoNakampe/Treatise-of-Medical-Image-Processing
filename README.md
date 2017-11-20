@@ -45,7 +45,7 @@ Data Preprocessing then FCN and simple CNN:
     pip install pytube
     sudo apt-get install unrar
 
-FFMPEG needs to be installed as well to generate gif videos. If using anaconda, ffmpeg can be installed as follows:
+FFMPEG needs to be installed:
 
     conda install -c menpo ffmpeg=3.1.
     Get NIPYPE: 
