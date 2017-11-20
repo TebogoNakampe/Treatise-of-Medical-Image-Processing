@@ -10,8 +10,8 @@ In this project, I built a model to classify brain tumours into three types base
 From a dataset of 32 patients, tumour features such as size, enhancement quality, necrosis proportion, etc. were extracted by radiologists. Diagnosis was also established for these patients. Based on this information I was able to create an optimised model to classify tumours with a 90% cross-validated accuracy.
 
 # Data Preprocessing and Model Selection:
-
-                                          TMIP.ipynb
+                                          Data_preprocessing.ipynb
+                                          TMIP_BrainTumour.ipynb
                                           Data = REMBRANDT may be found at (https://wiki.cancerimagingarchive.net/display/Public/REMBRANDT#4b0fe4760f6d405e9d09ad75c6f54790)
                                                                                                          
 <p align="center">
@@ -23,8 +23,48 @@ TMIP using FCN and Simple CNN:
 In order apply this model to new patients and generate an unbiased estimate of the model's performance, we are exploring simple convolutional neural networks and Fully Convolutional Neural Networks. However while we did manage to extract features such as tumour dimensions, side of epicentre, T1/FLAIR ratio and Enhancement Quality, so far we have been unable to extract features such as necrosis proportion or thickness of enhancing margin. 
 
 Data Preprocessing then FCN and simple CNN:
-                simple_cnn.ipynb
-                fcn.ipynb
+               Simplified_FCN.ipynb
+                medical-image-segmentation.ipynb
                 
+
+
+# Requirements for TMIP to work: 
+
+            Linux
+            Intel MKL-DNN
+            Tensorflow version 1.1.0
+ # Installing Dependencies (Anaconda installation is recommended)
+
+    pip install scipy
+    pip install imageio
+    pip install pyssim
+    pip install joblib
+    pip install Pillow
+    pip install scikit-image
+    pip install opencv-python
+    pip install pytube
+    sudo apt-get install unrar
+
+FFMPEG needs to be installed as well to generate gif videos. If using anaconda, ffmpeg can be installed as follows:
+
+    conda install -c menpo ffmpeg=3.1.
+    Get NIPYPE: 
+    https://github.com/nipy/nipype
+    Get FSL:
+    https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation
+    
+    
+# Citation
+
+If you find this useful, please cite our work as follows:
+
+@article{tebogonakampe17TMIP,
+  author = {Tebogo Nakampe and Thabo Koee,
+  title = {Treatise of Medical Image Processing},
+  journal = {TMIP},
+  year = {2017},
+}
+
+Please contact "afribizintegration@gmail.com" if you have any questions.
 
 
